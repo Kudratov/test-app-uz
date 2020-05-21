@@ -43,19 +43,7 @@ module.exports = (env) => {
                   }
                 }
               ]
-            })
-              // // style-loader
-              // { loader: 'style-loader' },
-              // // css-loader
-              // {
-              //   loader: 'css-loader',
-              //   options: {
-              //     modules: true
-              //   }
-              // },
-              // // sass-loader
-              // { loader: 'sass-loader' }
-            
+            })            
           }
         ]
       },
@@ -65,7 +53,7 @@ module.exports = (env) => {
     devServer: {
       contentBase: path.join(__dirname, 'public'),
       compress: true,
-      port: 9000,
+      port: 9090,
       historyApiFallback: true //handling code via client side code
     },
     devtool: isProduction ? 'source-map' : 'inline-source-map',
