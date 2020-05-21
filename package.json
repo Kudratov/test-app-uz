@@ -1,0 +1,45 @@
+{
+  "name": "ready-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build:dev": "webpack",
+    "build:prod": "webpack -p --env production",
+    "build-babel": "npx babel src/app.js --out-file=public/scripts/app.js --presets=env,react --watch",
+    "dev-server": "webpack-dev-server"
+  },
+  "author": "MRU",
+  "license": "ISC",
+  "dependencies": {
+    "extract-text-webpack-plugin": "^4.0.0-alpha.0",
+    "moment": "^2.24.0",
+    "normalize.css": "^8.0.1",
+    "react": "^16.8.6",
+    "react-addons-shallow-compare": "^15.6.2",
+    "react-dates": "^21.3.2",
+    "react-dom": "^16.8.6",
+    "react-redux": "^7.1.1",
+    "react-router-dom": "^5.0.1",
+    "redux": "^4.0.4",
+    "uuid": "^3.3.3"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.5.5",
+    "@babel/plugin-proposal-class-properties": "^7.5.5",
+    "@babel/plugin-proposal-object-rest-spread": "^7.6.2",
+    "@babel/plugin-transform-classes": "^7.5.5",
+    "@babel/preset-env": "^7.5.5",
+    "@babel/preset-react": "^7.0.0",
+    "babel-cli": "^6.26.0",
+    "babel-loader": "^8.0.6",
+    "css-loader": "^3.2.0",
+    "node-sass": "^4.12.0",
+    "sass-loader": "^8.0.0",
+    "style-loader": "^1.0.0",
+    "webpack": "^4.39.2",
+    "webpack-cli": "^3.3.6",
+    "webpack-dev-server": "^3.8.0"
+  }
+}
